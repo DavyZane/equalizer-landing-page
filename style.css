@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* .......... Variables .......... */
+:root {
+    --clr-cyan: #66E2DC;
+    --clr-orange: #FA7453;
+    --clr-yellow: #FFB964;
+    --clr-white: #FCFAF9;
+    --clr-black: #191826;
+
+    --ff-main: "IBM Plex Sans", cursive;
+}
+
+/* .......... Utilities .......... */
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.button {
+    padding: 1rem 0 1rem 0;
+    border-radius: 0.75rem;
+    justify-content: center;
+}
+
+.button-black {
+    background-color: var(--clr-black);
+}
+
+.button-black:hover {
+    background-color: var(--clr-cyan);
+    cursor: pointer;
+    .button-black_text {
+        color: var(--clr-black);
+    }
+    svg path {
+        fill: var(--clr-black);
+    }
+}
+
+.button-white {
+    background-color: var(--clr-white);
+}
+
+.button-white:hover {
+    background-color: var(--clr-yellow);
+    cursor: pointer;
+}
+
+.container_icon:hover {
+    cursor: pointer;
+    svg path {
+        fill: var(--clr-orange);
+    }
+}
+
+/* .......... Style .......... */
+
+body {
+    font-family: var(--ff-main);
+    background-image: url(/assets/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 1200px 1200px;
+    background-position: -100px -400px;
+}
+
+header {
+    padding: 4rem 1.25rem;
+}
+
+.header_text {
+    margin-top: 4rem;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.header_text_title {
+    font-size: 2.5rem;
+    font-style: bold;
+    letter-spacing: -1px;
+    line-height: 100%;
+}
+
+.header_text_paragraph {
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.main_img_mobile {
+    height: 430px;
+    margin: 0 auto -320px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.main_container_black {
+    background-color: var(--clr-black);
+}
+
+.main_pattern {
+    margin: 0 auto;
+}
+
+.main_container_red {
+    background-color: var(--clr-orange);
+    padding: 48px 20px 111px 20px;
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.main_container_content {
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.main_container_text {
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.main_text_title {
+    font-size: 2.5rem;
+    font-style: bold;
+    line-height: 110%;
+}
+
+.main_text_paragraph {
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.main_price {
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+span {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 110%;
+}
+
+.main_container_buttons {
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.main_container_buttons_content {
+    column-gap: 0.5rem;
+    align-items: center;
+}
+svg {
+    align-self: center;
+}
+
+.button-black_text {
+    color: var(--clr-white);
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+.button-white_text {
+    color: var(--clr-black);
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+footer {
+    padding: 64px 20px 80px 20px;
+}
+
+.footer_container {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
+}
+
+.footer_text_icons {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
+}
+
+.footer_container_icons {
+    column-gap: 2rem;
+}
+
+@media (min-width:700px) {
+
+    /* .......... Style .......... */
+
+    body {
+        background-image: url(/assets/bg-main-tablet.png);
+        background-repeat: no-repeat;
+        background-size: 1000px 1000px;
+        background-position: -200px -200px;
+    }
+
+    header {
+        padding: 4rem 2.5rem;
+    }
+
+    .header_pattern {
+        display: block;
+        height: 400px;
+        position: absolute;
+        top: -40px;
+        right: -50px;
+    }
+
+    .header_text {
+        margin-top: 8rem;
+    }
+
+    .header_text_title {
+        font-size: 4rem;
+        max-width: 416px;
+    }
+
+    .header_text_paragraph {
+        font-size: 1.125rem;
+    }
+
+    main {
+        padding: 5.875rem 2.5rem 4rem 2.5rem;
+    }
+
+    .main_img_mobile {
+        height: 556px;
+        margin: 0 0 -450px 2.8rem;
+    }
+
+    .main_container_black {
+        border-radius: 0.75rem;
+        min-height: 600px;
+    }
+
+    .main_pattern {
+        margin: 0 auto auto 0;
+    }
+
+    .main_container_red {
+        padding: 3rem;
+        border-radius: 1rem;
+        position: relative;
+        z-index: 1;
+        flex-direction: column;
+        row-gap: 3rem;
+        max-width: 356px;
+        margin: -500px 4rem auto auto;
+    }
+
+    .main_text_paragraph {
+        font-size: 1.125rem;
+    }
+
+    footer {
+        padding: 64px 40px 80px 40px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: stretch;
+        row-gap: 2rem;
+    }
+
+    .img_equalizer {
+        align-self: flex-start;
+    }
+    
+    .footer_text_icons {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer_container_icons {
+        column-gap: 2rem;
+    }
+}
+
+@media (min-width:1250px) {
+
+    /* .......... Style .......... */
+
+    body {
+        background-image: url(/assets/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 1800px 1800px;
+        background-position: -200px -200px;
+    }
+
+    header {
+        padding: 4rem 5rem;
+    }
+
+    .header_pattern {
+        display: block;
+        height: 468px;
+        position: absolute;
+        top: -40px;
+        right: 0px;
+    }
+
+    .header_text {
+        margin-top: 8rem;
+    }
+
+    .header_text_title {
+        font-size: 5.5rem;
+        max-width: 928px;
+    }
+
+    .header_text_paragraph {
+        font-size: 1.25rem;
+        max-width: 736px;
+    }
+
+    main {
+        padding: 5.875rem 10rem 4rem 10rem;
+    }
+
+    .main_img_mobile {
+        height: 642px;
+        margin: 0 0 -530px 2.8rem;
+    }
+
+    .main_container_black {
+        min-height: 600px;
+        max-width: 1120px;
+    }
+
+    .main_pattern {
+        margin: 0 auto auto 310px;
+    }
+
+    .main_container_red {
+        padding: 3.5rem;
+        max-width: 512px;
+        margin: -510px 8rem auto auto;
+    }
+
+    .main_text_paragraph {
+        font-size: 1.25rem;
+    }
+
+    footer {
+        padding: 64px 80px 80px 80px;
+    }
+
+    .footer_container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .footer_text_icons {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 18rem;
+    }
+}
